@@ -4,6 +4,10 @@ body {
     font-size: 2.2rem;
 }
 
+button {
+    cursor: pointer;
+}
+
 .body__header {
     padding: 0 120px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
@@ -239,11 +243,32 @@ body {
     position: absolute;
     left: 40%;  
     top: 293px;
+    height: 64px;
+    width: 64px;
+    background-color: lime;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:hover {
+    border-radius: 50%;
+    transition: 1s;
+}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:not(hover) {
+    border-radius: 0;
+    transition: 1s;
+}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:first-child {
+ background: #0278ED;
 }
 
 .body__section2__container__phones-container__white-frame__text-with-logo__logo-container img {
-    min-width: 64px;
-    min-height: 64px;
+    /* min-width: 64px;
+    min-height: 64px; */
+    display: unset;
 }
 
 .body__section2__container__phones-container__white-frame__text-with-logo__textheader {
@@ -259,6 +284,14 @@ body {
 .body__section2__container__phones-container__white-frame__text-with-logo__textheader.darkpink { color: #E738CE; }
 .body__section2__container__phones-container__white-frame__text-with-logo__textheader.skyblue { color: #00C6DF; }
 .body__section2__container__phones-container__white-frame__text-with-logo__textheader.darkmagenta { color: #B25DF8; }
+
+
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.blue { background: #0278ED; }
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.red-orange { background: #FF5437; }
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.orange { background: #FF9209; }
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.darkpink { background: #E738CE; }
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.skyblue { background: #00C6DF; }
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.darkmagenta { background: #B25DF8; }
 
 .body__section2__container__phones-container__white-frame__text-with-logo__textbox {
     margin: 0px 46px 40px;
