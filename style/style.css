@@ -5,158 +5,99 @@ body {
 }
 
 .body__header {
-    padding: 0 120px;
+    padding: 25px 0;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
 }
 
-.body__header__container {
+.header-wrapper {
     display: flex;
     justify-content: space-between;
-
-    padding: 20px 20px 20px 32px;
 }
 
-
-.body__header__container__logo-with-name {
-    margin: 25px 32px;
+.header-wrapper__logo-container {
     display: flex;
-    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 
-.body__header__container__logo-with-name img {
-    height: 40px;
-    width: 40px;
+.header-wrapper__logo-container__logo {
+    padding: 10px;
+    font-size: 1.8rem;
 }
 
-.body__header__container__logo-with-name p {
-    font-weight: bold;
+.logo-container__title {
     font-size: 2rem;
+    font-weight: 600;
 }
 
-.body__header__container__navigation {
+.header-wrapper__navigation {
     display: flex;
     align-items: center;
     justify-items: space-between;
     gap: 32px;
-
-    padding: 5px;
 }
 
-.body__header__container__navigation_link {
-    text-decoration: none;
+.header-wrapper__navigation__link {
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
     color: #666;
 }
-
-.body__header__container__navigation_btn {
-    height: 40px;
-    width: 172px;
-
-    background-color: #222222;
-    border-radius: 4px;
-    color: #fff;
-    text-transform: uppercase;
+.header-wrapper__navigation__get-service {
+    padding: 10px 25px;
     font-size: 1.4rem;
 }
 
-.body__section1,
-.body__section4,
-.body__section5 {
-    padding: 108px 136px 0px 136px;
-    max-height: 540px;
+
+/* ------------------------------------------------------ */
+
+.intro {
+    min-height: 646px;
     overflow: hidden;
+} 
+.description {
+    margin-top: 44px;
 }
 
-.body__section1__container,
-.body__section4__container {
-    display: flex;
-    align-items: flex-start;
-    padding: 0px 100px 0px 78px;
-}
-
-
-
-.body__section1__container__description-with-btn {
-    margin: 46px 180px 46px 78px;
-    display: inline-block;
-    max-width: 356px;
-    max-height: 420px;
-    cursor: pointer;
-}
-
-.body__section1__container__description-with-btn__logo-with-name {
-    display: flex;
-    align-items: center;
+.description__logo-container {
     gap: 14px;
 }
 
-.body__section1__container__description-with-btn__logo-with-name img {
-    width: 64px;
-    height: 64px;
-    cursor: pointer;
+.description__logo-container__logo {
+    padding: 17px 15px;
+    font-size: 2.7rem;
+    margin-bottom: 10px;
 }
 
-.body__section1__container__description-with-btn__logo-with-name p {
-    font-weight: bold;
-    font-size: 3.4rem;
-    cursor: pointer;
+.description__logo-container__title {
+    font-size: 3.2rem;
+    font-weight: 600;
 }
 
-.body__section1__container__description-with-btn__text-header {
-    margin: 10px 0px 18px 0px;
-
+.description__title {
+    margin-bottom: 18px;
     font-weight: 400;
     font-size: 5rem;
     line-height: 6rem;
 }
 
-.body__section1__container__description-with-btn__text-description {
+.description__explanation {
+    margin-bottom: 20px;
     font-size: 1.6rem;
-    font-weight: 400;
     line-height: 2.4rem;
-    letter-spacing: 0em;
+    font-weight: 400;
     text-align: left;
 }
 
-.section1-btn {
-    min-height: 40px;
-    min-width: 148px;
-    margin: 20px 5px;
-    cursor: pointer;
-    background-color: #222;
 
-    border-radius: 4px;
-    
-    color: #fff;
+.description__activity-panel button {
+    margin: 0 5px;
+    padding: 10px 25px;
     font-size: 1.4rem;
-    text-transform: uppercase;
 }
 
-.phone-screen {
-    display: inline-block;
-    position: relative;
-    max-width: 376px;
-    max-height: 746px;
-}
 
-.phone-screen__container {
-    display: flex;
-    justify-content: center;
-}
-
-.first-pict {
-    position: relative;
-}
-
-.second-pict {
-    position: absolute;
-    margin-top: 20px;
-}
-
-.third-pict {
-    position: absolute;
-}
 
 .body__section1__container__phone-screen img, 
 .body__section4__container__phone-frame img,
@@ -258,7 +199,7 @@ body {
 }
 
 .body__section2__container__phones-container__white-frame__text-with-logo__logo-container:first-child {
- background: #0278ED;
+    background: #0278ED;
 }
 
 .body__section2__container__phones-container__white-frame__text-with-logo__logo-container img {
@@ -273,21 +214,6 @@ body {
     font-size: 2.4rem;
     line-height: 3rem;
 }
-
-.body__section2__container__phones-container__white-frame__text-with-logo__textheader.blue { color: #0278ED; }
-.body__section2__container__phones-container__white-frame__text-with-logo__textheader.red-orange { color: #FF5437;}
-.body__section2__container__phones-container__white-frame__text-with-logo__textheader.orange { color: #FF9209; }
-.body__section2__container__phones-container__white-frame__text-with-logo__textheader.darkpink { color: #E738CE; }
-.body__section2__container__phones-container__white-frame__text-with-logo__textheader.skyblue { color: #00C6DF; }
-.body__section2__container__phones-container__white-frame__text-with-logo__textheader.darkmagenta { color: #B25DF8; }
-
-
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.blue { background: #0278ED; }
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.red-orange { background: #FF5437; }
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.orange { background: #FF9209; }
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.darkpink { background: #E738CE; }
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.skyblue { background: #00C6DF; }
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container.darkmagenta { background: #B25DF8; }
 
 .body__section2__container__phones-container__white-frame__text-with-logo__textbox {
     margin: 0px 46px 40px;
@@ -764,3 +690,71 @@ body {
     color: #666666;
     text-decoration: none;
 }
+
+/* .body__header__container {}
+
+.body__header__container__logo-with-name {}
+
+.body__header__container__logo-with-name img {}
+
+.body__header__container__logo-with-name p {}
+
+.body__header__container__navigation {}
+
+.body__header__container__navigation_link {}
+
+.body__header__container__navigation_btn {} */
+
+/* .body__section1,
+.body__section4,
+.body__section5 {}
+
+.body__section1__container,
+.body__section4__container {}
+
+
+
+.body__section1__container__description-with-btn {
+    margin: 46px 180px 46px 78px;
+    display: inline-block;
+    max-width: 356px;
+    max-height: 420px;
+    cursor: pointer;
+} */
+
+/* .body__section1__container__description-with-btn__logo-with-name {}
+
+.body__section1__container__description-with-btn__logo-with-name img {}
+
+.body__section1__container__description-with-btn__logo-with-name p {} */
+
+/* .body__section1__container__description-with-btn__text-header {}
+
+.body__section1__container__description-with-btn__text-description {}
+
+.section1-btn {} */
+
+/* .phone-screen {
+    display: inline-block;
+    position: relative;
+    max-width: 376px;
+    max-height: 746px;
+}
+
+.phone-screen__container {
+    display: flex;
+    justify-content: center;
+}
+
+.first-pict {
+    position: relative;
+}
+
+.second-pict {
+    position: absolute;
+    margin-top: 20px;
+}
+
+.third-pict {
+    position: absolute;
+} */
