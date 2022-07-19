@@ -11,6 +11,7 @@
     <title>H(app)y</title>
     <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/common.css">
     <script>
         function fgt() {
             window.open("https://www.apple.com/ru/app-store/", "_blank");
@@ -22,49 +23,41 @@
 </head>
 <body>
     <header class="body__header">
-        <div class="body__header__container">
-            <div class="body__header__container__logo-with-name">
-                <img src="./presets/img/logo.jpg" alt="logo">
-                <p>H(app)y</p>
+        <div class="header-wrapper large-container">
+            <div class="header-wrapper__logo-container logo-container">
+                <button class="header-wrapper__logo-container__logo happy-logo">(н)</button>
+                <h2 class="logo-container__title logo-title">H(app)y</h2>
             </div>
-            <nav class="body__header__container__navigation">
-                <a href="./index.html" class="body__header__container__navigation_link">Features</a>
-                <a href="./index.html" class="body__header__container__navigation_link">Pricing</a>
-                <a href="./index.html" class="body__header__container__navigation_link">Testimonials</a>
-                <a href="./index.html" class="body__header__container__navigation_link">Instructions</a>
-                <button class="body__header__container__navigation_btn" onclick="fnz()">get template</button>
+            <nav class="header-wrapper__navigation">
+                <a href="#features" class="header-wrapper__navigation__link">Features</a>
+                <a href="#prising" class="header-wrapper__navigation__link">Pricing</a>
+                <a href="#testimonials" class="header-wrapper__navigation__link">Testimonials</a>
+                <a href="#instructions" class="header-wrapper__navigation__link">Instructions</a>
+                <button class="header-wrapper__navigation__get-service dark-btn">get template</button>
             </nav>
         </div>
-        
     </header>
-    <section class="body__section1">
-        <div class="body__section1__container">
-            <div class="body__section1__container__description-with-btn">
-                <div class="body__section1__container__description-with-btn__logo-with-name">
-                    <img src="./presets/img/logo.jpg" alt="logo">
-                    <p>H(app)y</p>
+    
+    <section class="intro section phone">
+        <div class="intro-container phone-container medium-container">
+            <div class="intro-container__description description">
+                <div class="description__logo-container logo-container">
+                    <button class="description__logo-container__logo happy-logo">(н)</button>
+                    <h2 class="description__logo-container__title">H(app)y</h2>
                 </div>
-                <p class="body__section1__container__description-with-btn__text-header">
-                    The future of digital photos.
-                </p>
-                <p class="body__section1__container__description-with-btn__text-description">
-                    The H(app)y app is the latest & greatest in phone photography. It's available in the App Store right now. Go check it out!
-                </p>
-                <button class="body__section1__container__description-with-btn__btn-download section1-btn">download</button>
-                <button class="body__section1__container__description-with-btn__btn-read-more section1-btn">read more</button>
+                <h1 class="description__title">The future of digital photos.</h1>
+                <p class="description__explanation">The H(app)y app is the latest & greatest in phone photography. It's available in the App Store right now. Go check it out!</p>
+                <span class="description__activity-panel">
+                    <button class="activity-panel__download dark-btn">download</button>
+                    <button class="activity-panel__read-more dark-btn">read more</button>
+                </span>
             </div>
-            <div class="body__section1__container__phone-screen phone-screen">
-                <div class="body__section1__container__phone-screen__container phone-screen__container">
-                    <img class="body__section1__container__phone-screen__container__phone-frame first-pict" src="./presets/img/phone/phone-frame.png" alt="phone frame" >
-                    <img class="body__section1__container__phone-screen__container__img1 second-pict" src="./presets/img/phone/img1.jpg" alt="">
-                    <img class="body__section1__container__phone-screen__container__camera-frame third-pict" src="./presets/img/phone/phone-camera.png" alt="">
-                </div>
-                
-            </div>
+            <picture class="intro-container__phone-wrap phone-wrapper">
+                <img class="phone-wrap__img" src="./assets/img/phone/first_color_phone.png" alt="phone">
+            </picture>
         </div>
-
     </section>
-    <section class="body__section2">
+    <section class="body__section2" id="features">
         <div class="body__section2__container">
             <div class="body__section2__container__header-textbox">
                 <p class="body__section2__container__section-title">features</p>
@@ -250,7 +243,7 @@
             </div>
         </div>
     </section>
-    <section class="body__section7">
+    <section class="body__section7" id="prising">
         <div class="body__section7__inner-block">
             <div class="body__section7__header-with-description header-with-description">
                 <p class="body__section7__header-with-description__text-name text-name">Pricing</p>
@@ -288,7 +281,7 @@
         </div>
         
     </section>
-    <section class="body__section8">
+    <section class="body__section8" id="testimonials">
         <div class="body__section8_container">
             <div class="body__section8_container__header-with-description header-with-description">
                 <p class="body__section8_container__header-with-description__text-name text-name">Testimonials</p>
@@ -368,7 +361,7 @@
                 </div>
             </div>
         </div>
-    <section class="body__section10">
+    <section class="body__section10" id="instructions">
         <div class="body__section10__container">
             <div class="body__section10__container__header-with-description">
                 <p class="body__section10__container__header-with-description__text-header">faq</p>
