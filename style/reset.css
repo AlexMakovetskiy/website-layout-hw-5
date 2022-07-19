@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 li {
@@ -10,5 +11,8 @@ li {
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    box-sizing: border-box;
-  }
+}
+
+button {
+    cursor: pointer;
+}
