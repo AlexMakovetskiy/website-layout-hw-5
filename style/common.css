@@ -84,6 +84,10 @@ header, section, footer {
     color: #B25DF8;
 }
 
+.white-text {
+    color: white;
+}
+
 .blue-background {
     background: #0278ED;
 }
