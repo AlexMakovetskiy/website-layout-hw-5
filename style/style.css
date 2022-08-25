@@ -4,7 +4,7 @@ body {
     font-size: 2.2rem;
 }
 
-.body__header {
+.header.section {
     padding: 25px 0;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.15);
 }
@@ -50,7 +50,7 @@ body {
 }
 
 
-/* ------------------------------------------------------ */
+/* ------------------------------------ section 1 intro ----------------------------- */
 
 .intro {
     min-height: 646px;
@@ -97,7 +97,7 @@ body {
     font-size: 1.4rem;
 }
 
-
+/* to delete */
 
 .body__section1__container__phone-screen img, 
 .body__section4__container__phone-frame img,
@@ -106,120 +106,105 @@ body {
     max-height: 746px;
 }
 
-.body__section2 {
-    padding: 76px 126px 124px 112px;
+/* ------------------------------------ section 2 features ----------------------------- */
 
-    background-color: #222;
-    color: #fff;
+.features {
+    padding: 76px 0 124px;
 }
 
-.body__section2__container {
-    padding: 0 16px;
-}
-
-.body__section2__container__header-textbox {
-    margin: 0 300px 40px 300px;
-}
-
-.body__section2__container__section-title {
-    font-family: 'Poppins', sans-serif;
+.features-wrapper__text {
+    max-width: 494px;
+    margin: 0 auto;
+    padding-bottom: 44px;
     text-align: center;
+}
+
+.features-wrapper__text__title{
+    padding-bottom: 14px;
     font-size: 1.4rem;
-    letter-spacing: 0.2rem;
-    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.body__section2__container__text-header {
-    text-align: center;
+.features-wrapper__text__subtitle {
+    display: inline-block;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
 }
 
-.body__section2__container__phones-container {
+.features-wrapper__tickets {
+    min-height: 200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 16px;
-}
-
-.body__section2__container__phones-container__white-frame {
-    position: relative;
-
-    width: 378px;
-    height: 490px;
-    overflow: hidden;
-    padding: 40px 0 0 0;
-
-    border-radius: 20px;
-    background-color: #fff;
-
-    color: #222;
-}
-
-.body__section2__container__phones-container__white-frame__phone-frame {
-    display: flex;
-    justify-content: center;
-    height: 292px;
-    overflow: hidden;
-}
-
-.body__section2__container__phones-container__white-frame__phone-frame img {
-    height: 450px;
-    width: 226px;
-}
-
-.body__section2__container__phones-container__white-frame__text-with-logo {
-    padding: 48px 0px 40px;
-    height: 196px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-
-    background-color: #f2f2f2;
-}
-
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container {
-    position: absolute;
-    left: 40%;  
-    top: 293px;
-    height: 64px;
-    width: 64px;
-    background-color: lime;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    gap: 16px;
+
 }
 
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:hover {
-    border-radius: 50%;
-    transition: 1s;
+.tickets__ticket-container {
+    min-width: 32%;
+    background: white;
+    border-radius: 20px;
+    color: black;
+    overflow: hidden;
 }
 
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:not(hover) {
+.ticket-container__pic-wrapper {
+    max-height: 292px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.ticket-phone {
+    padding-top: 40px;
+    width: 226px;
+    height: 450px;
+}
+
+.ticket-container__content-box {
+    padding-bottom: 40px;
+    display: flex;
+    background: #f2f2f2;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.ticket-logo-container {
+    position: sticky;
+    margin: 0 auto;
+    padding: 22px 20px;
+    transform: translateY(-50%);
+    max-width: 64px;
+    max-height: 64px;
     border-radius: 0;
     transition: 1s;
 }
 
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:first-child {
-    background: #0278ED;
+.ticket-logo-container:hover {
+    border-radius: 50%;
 }
 
-.body__section2__container__phones-container__white-frame__text-with-logo__logo-container img {
-    /* min-width: 64px;
-    min-height: 64px; */
-    display: unset;
-}
-
-.body__section2__container__phones-container__white-frame__text-with-logo__textheader {
-    margin: 0px 101px 11px;
-    text-align: center;
+.ticket-container__content-box__title {
+    padding-bottom: 10px;
+    font-weight: 400;
     font-size: 2.4rem;
     line-height: 3rem;
 }
 
-.body__section2__container__phones-container__white-frame__text-with-logo__textbox {
-    margin: 0px 46px 40px;
-    text-align: center;
+.ticket-container__content-box__description {
+    display: inline-block;
+    margin: 0 auto;
+    max-width: 298px;
     font-size: 1.5rem;
+    line-height: 2.2rem;
 }
+
+/* ------------------------------------ section 3 ----------------------------- */
 
 .body__section3 {
     padding: 80px 0 100px;
@@ -758,3 +743,33 @@ body {
 .third-pict {
     position: absolute;
 } */
+
+/* .body__section2 {}
+
+.body__section2__container {}
+
+.body__section2__container__header-textbox {}
+
+.body__section2__container__section-title {}
+
+.body__section2__container__text-header {}
+
+.body__section2__container__phones-container {}
+
+.body__section2__container__phones-container__white-frame {}
+
+.body__section2__container__phones-container__white-frame__phone-frame {}
+
+.body__section2__container__phones-container__white-frame__phone-frame img {}
+
+.body__section2__container__phones-container__white-frame__text-with-logo {}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container {}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:hover {}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__logo-container:not(hover) {}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__textheader {}
+
+.body__section2__container__phones-container__white-frame__text-with-logo__textbox {} */
