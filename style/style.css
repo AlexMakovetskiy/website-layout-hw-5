@@ -76,14 +76,14 @@ body {
 }
 
 .description__title {
-    margin-bottom: 18px;
+    padding-bottom: 18px;
     font-weight: 400;
     font-size: 5rem;
     line-height: 6rem;
 }
 
 .description__explanation {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
     font-size: 1.6rem;
     line-height: 2.4rem;
     font-weight: 400;
@@ -204,34 +204,81 @@ body {
     line-height: 2.2rem;
 }
 
-/* ------------------------------------ section 3 ----------------------------- */
+/* ------------------------------------ section 3 achievements ----------------------------- */
 
-.body__section3 {
-    padding: 80px 0 100px;
-    display: flex;
-    justify-content: space-around;
-
-    background-color: #FF5437;
+.achievements {
+    padding: 100px 0;
     color: white;
 }
 
-.body__section3__textbox {
-    text-align: center;
+.achievements__achievements-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
 }
 
-.body__section3__textbox__text-header {
-    font-size: 9.4rem;
+.achievements-wrapper__content-container {
+    display: inline-flexbox;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.body__section3__textbox__phrase {
+.content-container__title {
+    padding-bottom: 30px;
+    font-weight: 400;
+    font-size: 9.6rem;
+    line-height: 9.6rem;
+}
+
+.content-container__subtitle {
     font-size: 1.4rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
     line-height: 2rem;
+    text-align: center;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
 
+/* ------------------------------------ section 4 technology ----------------------------- */
 
-.body__section4__container__article,
+.technology.phone {
+    max-height: 650px;
+}
+.technology-container__description.description {
+    padding: 32px 0 188px;
+}
+
+.description__subtitle {
+    padding-bottom: 5px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.technology .description__title {
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+
+.technology .description__explanation {
+    padding-bottom: 88px;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: gray;
+}
+
+/* ------------------------------------ section 5 Speed&security ----------------------------- */
+
+
+
+
+
+
+/*.body__section4__container__article,
 .body__section5__container__article {
     margin: 76px 188px 76px 78px;
     display: inline-block;
@@ -275,7 +322,7 @@ body {
 
 .body__section5__container__phone-frame {
     margin: 0 194px 0px 100px;
-}
+}*/
 
 .body__section6 {
     padding: 100px 420px 138px 420px;
