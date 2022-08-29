@@ -241,35 +241,7 @@ body {
     text-transform: uppercase;
 }
 
-/* ------------------------------------ section 4 technology ----------------------------- */
 
-.technology.phone {
-    max-height: 650px;
-}
-.technology-container__description.description {
-    padding: 32px 0 188px;
-}
-
-.description__subtitle {
-    padding-bottom: 5px;
-    font-size: 1.4rem;
-    line-height: 2rem;
-    letter-spacing: .2rem;
-    text-transform: uppercase;
-}
-
-.technology .description__title {
-    font-weight: 400;
-    font-size: 3.2rem;
-    line-height: 3.6rem;
-}
-
-.technology .description__explanation {
-    padding-bottom: 88px;
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: gray;
-}
 
 /* ------------------------------------ section 5 Speed&security ----------------------------- */
 
