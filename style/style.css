@@ -97,15 +97,6 @@ body {
     font-size: 1.4rem;
 }
 
-/* to delete */
-
-.body__section1__container__phone-screen img, 
-.body__section4__container__phone-frame img,
-.body__section5__container__phone-frame img {
-    max-width: 376px;
-    max-height: 746px;
-}
-
 /* ------------------------------------ section 2 features ----------------------------- */
 
 .features {
@@ -241,13 +232,16 @@ body {
     text-transform: uppercase;
 }
 
-/* ------------------------------------ section 4 technology ----------------------------- */
+/* ------------------------------------ section 4 technology and specifications----------------------------- */
 
-.technology.phone {
+.technology.phone,
+.specifications.phone {
     max-height: 650px;
 }
-.technology-container__description.description {
+.technology-container__description.description,
+.specifications-conteiner__description.description {
     padding: 32px 0 188px;
+    max-width: 406px;
 }
 
 .description__subtitle {
@@ -258,13 +252,15 @@ body {
     text-transform: uppercase;
 }
 
-.technology .description__title {
+.technology .description__title,
+.specifications .description__title {
     font-weight: 400;
     font-size: 3.2rem;
     line-height: 3.6rem;
 }
 
-.technology .description__explanation {
+.technology .description__explanation,
+.specifications .description__explanation {
     padding-bottom: 88px;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -273,300 +269,241 @@ body {
 
 /* ------------------------------------ section 5 Speed&security ----------------------------- */
 
-
-
-
-
-
-/*.body__section4__container__article,
-.body__section5__container__article {
-    margin: 76px 188px 76px 78px;
-    display: inline-block;
+.specifications__specifications-conteiner {
+    flex-direction: row-reverse;
 }
 
-.body__section4__container__article__textname,
-.body__section5__container__article__textname {
+/* ------------------------------------ section 6 mode-settings ----------------------------- */
+
+.mode-settings {
+    padding: 100px 0 140px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    border: 1px solid lightcoral;
+}
+
+.modes-container__subtitle {
+    padding-bottom: 6px;
     font-size: 1.4rem;
     line-height: 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
 }
 
-.body__section4__container__article__textheader,
-.body__section5__container__article__textheader {
-    margin: 5px 0 15px;
+.modes-container__title {
+    padding-bottom: 14px;
+    font-weight: 400;
     font-size: 3.2rem;
     line-height: 3.6rem;
-}
+} 
 
-.body__section4__container__article__textbox,
-.body__section5__container__article__textbox {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #666666;
-}
-
-.body__section5 {
-    background-color: #f2f2f2;
-}
-
-.body__section5__container {
-    display: flex;
-    align-items: flex-start;
-    padding: 0px 78px 0px 100px;
-}
-
-.body__section5__container__article {
-    margin: 76px 0px 76px 0px;
-}
-
-.body__section5__container__phone-frame {
-    margin: 0 194px 0px 100px;
-}*/
-
-.body__section6 {
-    padding: 100px 420px 138px 420px;
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    z-index: 5;
-}
-
-.body__section6__switching-mode-frame__textname {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    line-height: 2rem;
-    font-size: 1.4rem;
-}
-
-.body__section6__switching-mode-frame__textheader {
-    margin: 6px 0 16px 0;
-    font-size: 3.2rem;
-    line-height: 2rem;
-}
-
-.body__section6__switching-mode-frame__textbox {
+.modes-container__description {
+    padding-bottom: 36px;
+    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn {
-    overflow: hidden;
-}
-
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame {
-    padding-top: 24px;
-    width: 100%;
+.modes-container__phone-container {
+    padding-bottom: 50px;
+    max-height: 486px;
     display: flex;
     justify-content: center;
-    max-height: 512px;
     overflow: hidden;
-
-    border-bottom: 4px solid #f2f2f2 ;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container {
-    display: inline-block;
-    /* display: flex; */
-    /* justify-content: center; */
+.modes-container__phone-container {
+    border-bottom: 3px solid white;
+    max-height: 486px;
+    overflow-y: hidden;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container img {
-    max-width: 400px;
-    max-height: 792px;
+.modes-container__phone-container__phone {
+    min-width: 400px;
+    min-height: 792px;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container__phone-screen {
-    position: relative;
-    margin-top: 20px;
-}
-
-
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn {
-    padding: 42px 164px 20px;
+.modes-container__selection-box {
+    padding-top: 42px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
+    justify-content: center;
+    align-self: start;
+    gap: 40px;
+}
+
+.mode__title {
+    padding-top: 6px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+/* ------------------------------------ section 7 pricing ----------------------------- */
+
+.pricing {
+    padding: 100px 0;
+}
+
+.pricing-container {
+    text-align: center;
+}
+
+.pricing-container__subtitle {
+    padding-bottom: 6px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.pricing-container__title {
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+
+.pricing-container__description {
+    padding-bottom: 40px;
+    max-width: 568px;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.pricing-container__offer-wrap {
+    display: flex;
     flex-wrap: nowrap;
-    gap: 20px;
+    justify-content: space-between;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__light-mode__name, 
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__dark-mode__name {
-    text-align: center;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    line-height: 2rem;
-}
-
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0px 10px;
-}
-
-.body__section7 {
-    padding: 100px 120px;
-}
-
-.body__section7__header-with-description {
-    margin: 0 300px 40px;
-    text-align: center;
-}
-
-.body__section7__frames {
-    margin: 0 16px;
-}
-
-.body__section7__inner-block {
-    overflow: scroll;
-}
-
-.text-name {
-    font-size: 1.4rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    line-height: 2rem;
-    text-align: center;
-}
-
-.text-header {
-    margin: 6px 0 14px;
-    font-size: 3.2rem;
-    line-height: 3.6rem;
-    text-align: center;
-}
-
-.text-description {
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-    color: #666;
-    text-align: center;
-}
-
-.body__section7__frames {
-    display: flex;
-    gap: 16px;
-}
-
-.body__section7__frames__grey-frame {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.offers-container__offer-wrap {
+    min-width: 378px;
+    padding: 50px;
     border-radius: 20px;
     text-align: center;
     background: #f2f2f2;
 }
 
-.blue { color: #0278ED; }
-
-.red-orange { color: #FF5437; }
-
-.dark-yellow { color: #FF9209; }
-
-.blue button { background: #0278ED; }
-
-.red-orange button { background-color: #FF5437; }
-
-.dark-yellow button { background-color: #FF9209; }
-
-.body__section7__frames__grey-frame__text-name {
-    margin: 49px 146px 0;
+.offer-wrap__title {
+    padding-bottom: 6px;
     font-size: 1.8rem;
     line-height: 2.4rem;
 }
 
-.body__section7__frames__grey-frame__value {
-    display: flex;
-    flex-direction: column;
-    margin: 12px 40px 20px;
-}
-
-.body__section7__frames__grey-frame__value__money {
-    margin: 0 76px 25px;
+.offer-wrap__price-line {
+    padding-bottom: 26px;
+    font-weight: 400;
     font-size: 10.8rem;
     line-height: 12.4rem;
     letter-spacing: .8rem;
 }
 
-.body__section7__frames__grey-frame__value__period {
-    font-size: 14px;
+.offer-wrap__explanation {
+    padding-bottom: 20px;
+    font-size: 1.4rem;
     line-height: 2rem;
     letter-spacing: .2rem;
     text-transform: uppercase;
-    color: #222;
+    color: black;
 }
 
-.body__section7__frames__grey-frame__btn-for-buy {
-    height: 40px;
-    width: 130px;
-    margin: 0 calc(50% - 65px) 50px;
+.offer-wrap__buy-pack {
+    padding: 10px 25px;
     border-radius: 4px;
-    border: transparent;
-    text-transform: uppercase;
-    font-size: 1.4rem;
-    letter-spacing: .2rem;
-
+    border: 1px solid transparent;
     color: white;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
 
-.body__section8 {
-    background: #f2f2f2;
-    padding: 100px 120px;
+/* ------------------------------------ section 8 testimonials ----------------------------- */
+
+.testimonials {
+    padding: 100px 0;
 }
 
-
-.body__section8_container__header-with-description {
-    margin: 0 300px;
+.testimonials-wrapper {
+    text-align: center;
 }
 
-.body__section8_container__comments {
-    margin: 40px 16px 0;
+.testimonials-wrapper__subtitle {
+    padding-bottom: 6px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+}
+
+.testimonials-wrapper__title {
+    padding-bottom: 14px;
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+
+.testimonials-wrapper__description {
+    padding-bottom: 42px;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #666666;
+}
+
+.testimonials-wrapper__feedback-board {
     display: flex;
-    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 16px;
-
-    
 }
 
-.body__section8_container__comments__comment-container {
-    background: #fff;
+.comment-container {
+    padding: 30px 0;
     border-radius: 20px;
+    background: white;
 }
 
-.body__section8_container__comments__comment-container__text {
-    margin: 30px 32px 0;
+.comment-container__recall {
+    padding: 0 30px 20px;
     font-size: 1.6rem;
     line-height: 2.4rem;
-}
-
-.body__section8_container__comments__user-container {
-    margin: 20px 30px 30px;
-    display: flex;
-    flex-direction: row;
-}
-
-.body__section8_container__comments__user-container__name-organization {
     text-align: left;
-    padding: 0 10px;
+    max-height: 96px;
 }
-.body__section8_container__comments__user-container__name-organization__name {
+
+.comment-container__person-wrapper {
+    margin-top: 20px;
+    padding:  0 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.person-wrapper__photo {
+    border-radius: 100%;
+    max-height: 48px;
+    max-width: 48px;
+}
+
+.person-wrapper__contact-information {
+    text-align: left;
+}
+
+.contact-information__name, 
+.contact-information__company-name {
     font-size: 1.6rem;
     line-height: 2rem;
 }
 
-.body__section8_container__comments__user-container__name-organization__organization {
-    font-size: 1.4rem;
-    line-height: 2rem;
-}
 
-.body__section8_container__comments__user-container__photo-container img {
-    max-height: 48px;
-    max-width: 48px;
-    border-radius: 50%;
-}
+/* ------------------------------------ section 9 dawnload ----------------------------- */
+
+
 
 .body__section9__container {
     margin: 120px;
@@ -820,3 +757,301 @@ body {
 .body__section2__container__phones-container__white-frame__text-with-logo__textheader {}
 
 .body__section2__container__phones-container__white-frame__text-with-logo__textbox {} */
+/*.body__section4__container__article,
+.body__section5__container__article {
+    margin: 76px 188px 76px 78px;
+    display: inline-block;
+}
+
+.body__section4__container__article__textname,
+.body__section5__container__article__textname {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.body__section4__container__article__textheader,
+.body__section5__container__article__textheader {
+    margin: 5px 0 15px;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+
+.body__section4__container__article__textbox,
+.body__section5__container__article__textbox {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #666666;
+}
+
+.body__section5 {
+    background-color: #f2f2f2;
+}
+
+.body__section5__container {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 78px 0px 100px;
+}
+
+.body__section5__container__article {
+    margin: 76px 0px 76px 0px;
+}
+
+.body__section5__container__phone-frame {
+    margin: 0 194px 0px 100px;
+}*/
+
+/* .body__section6 {
+    padding: 100px 420px 138px 420px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    z-index: 5;
+}
+
+.body__section6__switching-mode-frame__textname {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+
+.body__section6__switching-mode-frame__textheader {
+    margin: 6px 0 16px 0;
+    font-size: 3.2rem;
+    line-height: 2rem;
+}
+
+.body__section6__switching-mode-frame__textbox {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn {
+    overflow: hidden;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame {
+    padding-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-height: 512px;
+    overflow: hidden;
+
+    border-bottom: 4px solid #f2f2f2 ;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container {
+    display: inline-block;
+    /* display: flex; */
+    /* justify-content: center; */
+/*}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container img {
+    max-width: 400px;
+    max-height: 792px;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container__phone-screen {
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn {
+    padding: 42px 164px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__light-mode__name, 
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__dark-mode__name {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 10px;
+} */
+
+/* to delete */
+
+/* .body__section1__container__phone-screen img, 
+.body__section4__container__phone-frame img,
+.body__section5__container__phone-frame img {
+    max-width: 376px;
+    max-height: 746px;
+} */
+
+/* .body__section7 {
+    padding: 100px 120px;
+}
+
+.body__section7__header-with-description {
+    margin: 0 300px 40px;
+    text-align: center;
+}
+
+.body__section7__frames {
+    margin: 0 16px;
+}
+
+.body__section7__inner-block {
+    overflow: scroll;
+}
+
+.text-name {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.text-header {
+    margin: 6px 0 14px;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+    text-align: center;
+}
+
+.text-description {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: #666;
+    text-align: center;
+}
+
+.body__section7__frames {
+    display: flex;
+    gap: 16px;
+}
+
+.body__section7__frames__grey-frame {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    text-align: center;
+    background: #f2f2f2;
+}
+
+.blue { color: #0278ED; }
+
+.red-orange { color: #FF5437; }
+
+.dark-yellow { color: #FF9209; }
+
+.blue button { background: #0278ED; }
+
+.red-orange button { background-color: #FF5437; }
+
+.dark-yellow button { background-color: #FF9209; }
+
+.body__section7__frames__grey-frame__text-name {
+    margin: 49px 146px 0;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.body__section7__frames__grey-frame__value {
+    display: flex;
+    flex-direction: column;
+    margin: 12px 40px 20px;
+}
+
+.body__section7__frames__grey-frame__value__money {
+    margin: 0 76px 25px;
+    font-size: 10.8rem;
+    line-height: 12.4rem;
+    letter-spacing: .8rem;
+}
+
+.body__section7__frames__grey-frame__value__period {
+    font-size: 14px;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.body__section7__frames__grey-frame__btn-for-buy {
+    height: 40px;
+    width: 130px;
+    margin: 0 calc(50% - 65px) 50px;
+    border-radius: 4px;
+    border: transparent;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    letter-spacing: .2rem;
+
+    color: white;
+} */
+
+/* .body__section8 {
+    background: #f2f2f2;
+    padding: 100px 120px;
+}
+
+
+.body__section8_container__header-with-description {
+    margin: 0 300px;
+}
+
+.body__section8_container__comments {
+    margin: 40px 16px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+
+    
+}
+
+.body__section8_container__comments__comment-container {
+    background: #fff;
+    border-radius: 20px;
+}
+
+.body__section8_container__comments__comment-container__text {
+    margin: 30px 32px 0;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.body__section8_container__comments__user-container {
+    margin: 20px 30px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.body__section8_container__comments__user-container__name-organization {
+    text-align: left;
+    padding: 0 10px;
+}
+.body__section8_container__comments__user-container__name-organization__name {
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+
+.body__section8_container__comments__user-container__name-organization__organization {
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.body__section8_container__comments__user-container__photo-container img {
+    max-height: 48px;
+    max-width: 48px;
+    border-radius: 50%;
+} */
