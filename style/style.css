@@ -97,15 +97,6 @@ body {
     font-size: 1.4rem;
 }
 
-/* to delete */
-
-.body__section1__container__phone-screen img, 
-.body__section4__container__phone-frame img,
-.body__section5__container__phone-frame img {
-    max-width: 376px;
-    max-height: 746px;
-}
-
 /* ------------------------------------ section 2 features ----------------------------- */
 
 .features {
@@ -282,138 +273,82 @@ body {
     flex-direction: row-reverse;
 }
 
+/* ------------------------------------ section 6 mode-settings ----------------------------- */
 
-
-
-
-/*.body__section4__container__article,
-.body__section5__container__article {
-    margin: 76px 188px 76px 78px;
-    display: inline-block;
+.mode-settings {
+    padding: 100px 0 140px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    border: 1px solid lightcoral;
 }
 
-.body__section4__container__article__textname,
-.body__section5__container__article__textname {
+.modes-container__subtitle {
+    padding-bottom: 6px;
     font-size: 1.4rem;
     line-height: 2rem;
-    letter-spacing: 0.2rem;
+    letter-spacing: .2rem;
     text-transform: uppercase;
 }
 
-.body__section4__container__article__textheader,
-.body__section5__container__article__textheader {
-    margin: 5px 0 15px;
+.modes-container__title {
+    padding-bottom: 14px;
+    font-weight: 400;
     font-size: 3.2rem;
     line-height: 3.6rem;
-}
+} 
 
-.body__section4__container__article__textbox,
-.body__section5__container__article__textbox {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-    color: #666666;
-}
-
-.body__section5 {
-    background-color: #f2f2f2;
-}
-
-.body__section5__container {
-    display: flex;
-    align-items: flex-start;
-    padding: 0px 78px 0px 100px;
-}
-
-.body__section5__container__article {
-    margin: 76px 0px 76px 0px;
-}
-
-.body__section5__container__phone-frame {
-    margin: 0 194px 0px 100px;
-}*/
-
-.body__section6 {
-    padding: 100px 420px 138px 420px;
-    background-color: #222;
-    color: #fff;
-    text-align: center;
-    z-index: 5;
-}
-
-.body__section6__switching-mode-frame__textname {
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    line-height: 2rem;
-    font-size: 1.4rem;
-}
-
-.body__section6__switching-mode-frame__textheader {
-    margin: 6px 0 16px 0;
-    font-size: 3.2rem;
-    line-height: 2rem;
-}
-
-.body__section6__switching-mode-frame__textbox {
+.modes-container__description {
+    padding-bottom: 36px;
+    font-weight: 400;
     font-size: 1.8rem;
     line-height: 2.4rem;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn {
-    overflow: hidden;
-}
-
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame {
-    padding-top: 24px;
-    width: 100%;
+.modes-container__phone-container {
+    padding-bottom: 50px;
+    max-height: 486px;
     display: flex;
     justify-content: center;
-    max-height: 512px;
     overflow: hidden;
-
-    border-bottom: 4px solid #f2f2f2 ;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container {
-    display: inline-block;
-    /* display: flex; */
-    /* justify-content: center; */
+.modes-container__phone-container {
+    border-bottom: 3px solid white;
+    max-height: 486px;
+    overflow-y: hidden;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container img {
-    max-width: 400px;
-    max-height: 792px;
+.modes-container__phone-container__phone {
+    min-width: 400px;
+    min-height: 792px;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container__phone-screen {
-    position: relative;
-    margin-top: 20px;
-}
-
-
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn {
-    padding: 42px 164px 20px;
+.modes-container__selection-box {
+    padding-top: 42px;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 20px;
+    justify-content: center;
+    align-self: start;
+    gap: 40px;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__light-mode__name, 
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__dark-mode__name {
-    text-align: center;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
+.mode__title {
+    padding-top: 6px;
     font-size: 1.4rem;
     line-height: 2rem;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
 }
 
-.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 0px 10px;
-}
+
+
+
+
+
+
+
+
 
 .body__section7 {
     padding: 100px 120px;
@@ -828,3 +763,140 @@ body {
 .body__section2__container__phones-container__white-frame__text-with-logo__textheader {}
 
 .body__section2__container__phones-container__white-frame__text-with-logo__textbox {} */
+/*.body__section4__container__article,
+.body__section5__container__article {
+    margin: 76px 188px 76px 78px;
+    display: inline-block;
+}
+
+.body__section4__container__article__textname,
+.body__section5__container__article__textname {
+    font-size: 1.4rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.body__section4__container__article__textheader,
+.body__section5__container__article__textheader {
+    margin: 5px 0 15px;
+    font-size: 3.2rem;
+    line-height: 3.6rem;
+}
+
+.body__section4__container__article__textbox,
+.body__section5__container__article__textbox {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: #666666;
+}
+
+.body__section5 {
+    background-color: #f2f2f2;
+}
+
+.body__section5__container {
+    display: flex;
+    align-items: flex-start;
+    padding: 0px 78px 0px 100px;
+}
+
+.body__section5__container__article {
+    margin: 76px 0px 76px 0px;
+}
+
+.body__section5__container__phone-frame {
+    margin: 0 194px 0px 100px;
+}*/
+
+/* .body__section6 {
+    padding: 100px 420px 138px 420px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    z-index: 5;
+}
+
+.body__section6__switching-mode-frame__textname {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+    font-size: 1.4rem;
+}
+
+.body__section6__switching-mode-frame__textheader {
+    margin: 6px 0 16px 0;
+    font-size: 3.2rem;
+    line-height: 2rem;
+}
+
+.body__section6__switching-mode-frame__textbox {
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn {
+    overflow: hidden;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame {
+    padding-top: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    max-height: 512px;
+    overflow: hidden;
+
+    border-bottom: 4px solid #f2f2f2 ;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container {
+    display: inline-block;
+    /* display: flex; */
+    /* justify-content: center; */
+/*}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container img {
+    max-width: 400px;
+    max-height: 792px;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__phone-frame__container__phone-screen {
+    position: relative;
+    margin-top: 20px;
+}
+
+
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn {
+    padding: 42px 164px 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__light-mode__name, 
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button__dark-mode__name {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.body__section6__switching-mode-frame__phone-with-btn__switch-btn__button {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0px 10px;
+} */
+
+/* to delete */
+
+/* .body__section1__container__phone-screen img, 
+.body__section4__container__phone-frame img,
+.body__section5__container__phone-frame img {
+    max-width: 376px;
+    max-height: 746px;
+} */
