@@ -1,0 +1,104 @@
+[33mcommit c8d578c210824a5c2f29be64bc25409904d111f1[m[33m ([m[1;36mHEAD -> [m[1;32madding-containers[m[33m, [m[1;31morigin/adding-containers[m[33m)[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Tue Aug 30 14:41:20 2022 +0300
+
+    reamke testimonials section
+
+[33mcommit 46139f0f53ced234a840da4c6171c841f16eb1d2[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Tue Aug 30 10:14:48 2022 +0300
+
+    reamke pricing section
+
+[33mcommit 99e88cfd8888e473929fb513133fa320ff243a60[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Tue Aug 30 10:13:17 2022 +0300
+
+    reamke mode-settings section
+
+[33mcommit e0a041d40368f6a78dad1c2e5c9963a8f269a22d[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Mon Aug 29 15:21:53 2022 +0300
+
+    remake specifications section
+
+[33mcommit ac13b9ee35692d4657e81ea85d1482a7ad2296d3[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Mon Aug 29 12:16:14 2022 +0300
+
+    remake technology section
+
+[33mcommit 51bbad531c50d5e32267fe2f15196966bd4a2c79[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Mon Aug 29 12:14:23 2022 +0300
+
+    remake achievements section and fix bugs
+
+[33mcommit 54954982079b4dc4ef14818fd43b401b82b7e1d2[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Mon Aug 29 12:03:51 2022 +0300
+
+    remake achievements section
+
+[33mcommit 2cf5fa3e1c6c14e1245bc2dc4826ed9645443ea5[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Thu Aug 25 11:51:55 2022 +0300
+
+    remake features section
+
+[33mcommit ac5777f33267083fbe36d0cb5094f1751c33a819[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Thu Jul 21 16:37:20 2022 +0300
+
+    section features
+
+[33mcommit dd2e2070ace0cd7f6bf8c45f4cf25ca25d1dbd33[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Tue Jul 19 16:31:07 2022 +0300
+
+    rebuild header and features section
+
+[33mcommit 4e9011ad49d996637fae0ff76e8124fa489eb5c1[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Tue Jul 19 08:29:08 2022 +0300
+
+    initialize new branch
+
+[33mcommit 93350eb7a67ee4f10f30e0126e0f4d0c67a40a1e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m
+Merge: 36e0008 9d604b1
+Author: AlexMakovetskiy <108091268+AlexMakovetskiy@users.noreply.github.com>
+Date:   Sat Jul 9 22:07:06 2022 +0300
+
+    Merge pull request #1 from AlexMakovetskiy/svg-replace
+    
+    Svg replace
+
+[33mcommit 9d604b1ec63fd3612d2b2748374c807dfcdfe31d[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Fri Jul 8 16:41:59 2022 +0300
+
+    added svg and set up btn
+
+[33mcommit 83431e7a9504060f006e9a02525c18be78375705[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Fri Jul 8 11:39:57 2022 +0300
+
+    replace mode icons svg
+
+[33mcommit c24538561675703c77d686f2cb6fa79efebc2278[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Fri Jul 8 10:11:04 2022 +0300
+
+    add apple like font
+
+[33mcommit 36e00082e0ae90e8966a8f995815bfeebcb26670[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Fri Jul 8 08:14:25 2022 +0300
+
+    first commit
+
+[33mcommit c09208d658377594d6576dc4a558864c73deda8c[m
+Author: AlexMakovetskiy <bo5634302@gmail.com>
+Date:   Fri Jul 8 08:13:52 2022 +0300
+
+    initialization project
