@@ -35,15 +35,32 @@ body {
     display: flex;
     align-items: center;
     justify-items: space-between;
-    gap: 32px;
+    gap: 16px;
 }
 
 .header-wrapper__navigation__link {
+    min-width: 100px;
+    height: 100%;
+    display: inline-block;
+    transition: 1s;
+    border-radius: 15px;
+    background: transparent;
+    text-align: center;
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 4rem;
     color: #666;
 }
+
+.header-wrapper__navigation__link:hover {
+    background: #666;
+    color: black;
+}
+
+.header-wrapper__navigation__link.testimonials-link-nav {
+    min-width: 110px;
+}
+
 .header-wrapper__navigation__get-service {
     padding: 10px 25px;
     font-size: 1.4rem;
@@ -330,6 +347,21 @@ body {
     justify-content: center;
     align-self: start;
     gap: 40px;
+}
+
+.selection-box__mode__image-sun path,
+.selection-box__mode__image-moon path {
+    fill: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.selection-box__mode__image-sun path:hover {
+    fill: #FF9209;
+}
+
+.selection-box__mode__image-moon path:hover {
+    fill: #0278ED;
 }
 
 .mode__title {

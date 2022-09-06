@@ -5,6 +5,14 @@ header, section, footer {
 
 button {
     font-family: 'Poppins', sans-serif;
+    border: 1px solid transparent;
+    transition: .6s;
+}
+
+button:hover {
+    border: 1px solid black;
+    background: white;
+    color: black;
 }
 
 .small-container,
