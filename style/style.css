@@ -281,7 +281,6 @@ body {
     flex-direction: column;
     color: white;
     text-align: center;
-    border: 1px solid lightcoral;
 }
 
 .modes-container__subtitle {
@@ -505,6 +504,7 @@ body {
 
 .download {
     padding: 120px 0;
+    
 }
 
 .download__download-container {
@@ -542,6 +542,7 @@ body {
     background: black;
     border: 2px solid #A6A6A6;
     border-radius: 15px;
+    font-family: 'Space Grotesk', sans-serif;
     color: white;    
 }
 

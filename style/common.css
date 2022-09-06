@@ -3,6 +3,10 @@ header, section, footer {
     width: 100%;
 }
 
+button {
+    font-family: 'Poppins', sans-serif;
+}
+
 .small-container,
 .medium-container,
 .large-container {
