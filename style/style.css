@@ -1,3 +1,28 @@
+@keyframes move {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+    transform: rotate(360deg);
+    }
+}
+
+@keyframes move-static {
+    0% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+    transform: rotate(0deg);
+    }
+}
+
+
 body {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -24,6 +49,12 @@ body {
 .header-wrapper__logo-container__logo {
     padding: 10px;
     font-size: 1.8rem;
+    transition: 1s;
+}
+
+.header-wrapper__logo-container__logo:hover,
+.description__logo-container__logo:hover {
+    color: transparent;
 }
 
 .logo-container__title {
@@ -35,15 +66,32 @@ body {
     display: flex;
     align-items: center;
     justify-items: space-between;
-    gap: 32px;
+    gap: 16px;
 }
 
 .header-wrapper__navigation__link {
+    min-width: 100px;
+    height: 100%;
+    display: inline-block;
+    transition: 1s;
+    border-radius: 15px;
+    background: transparent;
+    text-align: center;
     font-weight: 400;
     font-size: 1.6rem;
-    line-height: 2.4rem;
+    line-height: 4rem;
     color: #666;
 }
+
+.header-wrapper__navigation__link:hover {
+    background: #666;
+    color: black;
+}
+
+.header-wrapper__navigation__link.testimonials-link-nav {
+    min-width: 110px;
+}
+
 .header-wrapper__navigation__get-service {
     padding: 10px 25px;
     font-size: 1.4rem;
@@ -65,9 +113,10 @@ body {
 }
 
 .description__logo-container__logo {
+    margin-bottom: 10px;
     padding: 17px 15px;
     font-size: 2.7rem;
-    margin-bottom: 10px;
+    transition: 1s;
 }
 
 .description__logo-container__title {
@@ -144,10 +193,16 @@ body {
 }
 
 .ticket-container__pic-wrapper {
+    padding-top: 20px;
     max-height: 292px;
     display: flex;
     justify-content: center;
     overflow: hidden;
+    transition: 1s;
+}
+
+.ticket-container__pic-wrapper:hover {
+    transform: translateY(-20px);
 }
 
 .ticket-phone {
@@ -315,13 +370,19 @@ body {
 
 .modes-container__phone-container {
     border-bottom: 3px solid white;
-    max-height: 486px;
+    max-height: 520px;
     overflow-y: hidden;
 }
 
 .modes-container__phone-container__phone {
+    padding-top: 20px;
     min-width: 400px;
     min-height: 792px;
+    transition: 1s;
+}
+
+.modes-container__phone-container__phone:hover {
+    transform: translateY(-20px);
 }
 
 .modes-container__selection-box {
@@ -330,6 +391,21 @@ body {
     justify-content: center;
     align-self: start;
     gap: 40px;
+}
+
+.selection-box__mode__image-sun path,
+.selection-box__mode__image-moon path {
+    fill: white;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.selection-box__mode__image-sun path:hover {
+    fill: #FF9209;
+}
+
+.selection-box__mode__image-moon path:hover {
+    fill: #0278ED;
 }
 
 .mode__title {
@@ -620,11 +696,28 @@ body {
 
 .footer-wrapper__logo {
     margin-bottom: 14px;
-    padding: 20px 18px;
     background: linear-gradient(134.43deg, #D140F8 -3.1%, #788CE9 33.99%, #37C2DE 66.36%, #1ECCAE 98.5%);
-    font-size: 2.8rem;
-    color: white;
     border-radius: 20px;
+    transition: all 0.5s ease;
+    transform: rotate(0deg)
+}
+
+.footer-wrapper__logo:hover {
+    animation: move infinite 1s linear;
+}
+
+.footer-wrapper__logo__title {
+    min-height: 80px;
+    min-width: 80px;
+    display: inline-block;
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 8rem;
+    color: white;
+}
+
+.footer-wrapper__logo__title:hover {
+    animation: move-static infinite 1s linear;
 }
 
 .footer-wrapper__title {
@@ -633,6 +726,8 @@ body {
     font-size: 2.6rem;
     line-height: 2.8rem;
 }
+
+
 
 .footer-wrapper__links-container {
     padding-bottom: 28px;

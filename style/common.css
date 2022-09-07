@@ -5,6 +5,14 @@ header, section, footer {
 
 button {
     font-family: 'Poppins', sans-serif;
+    border: 1px solid transparent;
+    transition: .6s;
+}
+
+button:hover {
+    border: 1px solid black;
+    background: white;
+    color: black;
 }
 
 .small-container,
@@ -62,6 +70,25 @@ button {
     align-items: flex-start;
     justify-content: space-between;
     gap: 210px;
+    
+}
+
+.phone-container img {
+    transition: 2s;
+}
+
+.phone-container img:hover {
+    transform: translateY(-20px);
+}
+
+.symbol-rotate {
+    cursor: pointer;
+    transition: 1s;
+    display: inline-block;
+}
+
+.symbol-rotate:hover {
+    transform: rotateX(360deg);
 }
 
 .blue-text {
