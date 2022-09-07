@@ -70,6 +70,25 @@ button:hover {
     align-items: flex-start;
     justify-content: space-between;
     gap: 210px;
+    
+}
+
+.phone-container img {
+    transition: 2s;
+}
+
+.phone-container img:hover {
+    transform: translateY(-20px);
+}
+
+.symbol-rotate {
+    cursor: pointer;
+    transition: 1s;
+    display: inline-block;
+}
+
+.symbol-rotate:hover {
+    transform: rotateX(360deg);
 }
 
 .blue-text {
